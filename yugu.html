@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Seatwork#2</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAT7IkAB3ltwAAAgMAHOixAAAACAAEAAAAf39/AE2xIwAb5bUAJh7rAAABAgB+fn4AAAUAAAECAQA5xVkAHea0AE+wJQAHAwAAAQMDAAEAEQAAAwsAJBvtACYd6ACCgoIACQkJAAICAgBPsiEAL6w3AE6xJQAAAAUAgICAAEmtKgAEAQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBwcHBwwHGAAAAAAAAAAHAAgICAgIAB8AAAAAAAAABxkIBAgECAAHAAAAAAAAAAcGCAQIEA8DBwAAAAAAAAAHBggJCAIcDgcAAAAAAAAABwUBGx0gEQ0HAAAAAAAAAAcHBwcHBwcHBwAAAAAAAAAAHhYUFhUWIQAAAAAAAAAAAAAWABITFhYaAAAAAAAAAAAAFgAAAAsXCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAPAHAADwBwAA8AcAAPAHAADwBwAA8AcAAPAHAAD4DwAA+AcAAPjHAAD//wAA//8AAP//AAA=" rel="icon" type="image/x-icon">
+<style>
+body {
+font-family: Pixelify Sans;
+background-color: #113d03;
+} 
+
+h1 {
+background-color: #dbdbdb;
+color: #676767;
+font-size: 90px;
+border: 10px solid #426b43; 
+}
+
+#smthn {
+background-color: #1b2a1b;
+border: 8px dashed #41ff00; 
+padding-left: 40px;
+padding-right: 40px;
+}
+
+#smthn2 {
+background-color: #1b2a1b;
+border: 8px dashed #41ff00; 
+font-size: 30px;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+#gh {
+border: 5px dotted #ffffff;
+font-size: 30px;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#refsheet {
+font-size: 10px;
+text-decoration: underline;
+}
+
+#sheet {
+font-size: 10px;
+text-decoration: underline;
+}
+
+</style>
+
+
+</head>  
+<body>
+<audio autoplay loop>
+<source src="https://dl.sndup.net/h7z6/sans%20for%20my%20school%20project.mp3" type="audio/mpeg">
+</audio>
+<center>
+<h1><img src="https://i.postimg.cc/MGQn4h7s/iconyugu-removebg-preview.png" alt="icon" width="90px"> Emily's Corner <img src="https://i.postimg.cc/hPWPKXyd/hu-removebg-preview.png" alt="math is fun" width="90px"></h1>
+<br><br>
+<div id="smthn" class="container">
+<div class="container">
+<div class="row">
+<table>
+<tr><img src="https://i.postimg.cc/YS6vnwbL/output-onlinegiftools-2.gif" alt="computerlady" width="450px"></tr>
+</table>
+</div>
+</div>
+<div class="text-white container-md">
+<div class="row">
+<table class="table table-hover" id="gh" !important>
+<td> Hello, My name is Emily, I am a math-enthusiast robot who likes to calculate using the power of Javascript! Pick a math problem you'd like me to do! </td>
+</table>
+</div>
+</div>
+</div>
+<br><br>
+<div id="smthn2" class="container text-white">
+<div class="column col-md-8">
+<br>
+<label> Enter the first number here:</label>
+<input type="number" class="form-control" width="100px" id="num1">
+<br>
+<label> Enter the second number here:</label>
+<input type="number" class="form-control" id="num2">
+<br>
+<button class="btn btn-success" type="submit" id="submit" onclick="compute()">Add, Subtract, Multiply, and Divide.</button>
+<br> <br>
+<button class="btn btn-success" type="submit" id="submit" onclick="calculate()">Greater than, Less than.</button>
+<br><br>
+<button class="btn btn-success" type="submit" id="submit" onclick="solve()">Given Numbers vs Random Numbers (up to 200)</button>
+<br><br>
+<button class="btn btn-success" type="submit" id="submit" onclick="decipher()">Square of Number 1, Cube of Number 2.</button>
+<br><br>
+<p id="display"> Answer will be displayed here! </p>
+
+<br><br>
+<img src="https://i.postimg.cc/pX0wYD98/output-onlinegiftools-3.gif" alt="lilyugu" width="100px">
+<br><br>
+<p id="sheet"> Made by Angeli Biscocho of 9-Ruby</p>
+<p onclick="bonus()" id="refsheet">BONUS: Emily's brother drawn by Toby (little bro)</a>
+</div>
+</div>
+</center>
+<script type="text/javascript">
+function compute(){
+var num1 = document.getElementById("num1").value;
+var num2 = document.getElementById("num2").value;
+var add = Number(num1) + Number(num2);
+var subtract = Number(num1) - Number(num2);
+var multiply = Number(num1) * Number(num2);
+var divide = Number(num1) / Number(num2);
+
+document.getElementById("display").innerHTML="If it is added, then it is equal to "+ add +"; If it is subtracted, then it is equal to "+ subtract +" ; If it is multiplied, then it is equal to "+ multiply +" ; and if it is divided, then it is equal to "+ divide +".";
+}
+
+function calculate() {
+var num1 = document.getElementById("num1").value;
+var num2 = document.getElementById("num2").value;
+if (num1 < num2) {
+var x = ""+ num1 +" is less compared to "+ num2 +"";
+}
+else if (num1 > num2) {
+var x = ""+ num1 +" is greater compared to "+ num2 +"";
+}
+else {
+var x = ""+ num1 +" is equal compared to "+ num2 +"";
+}
+document.getElementById("display").innerHTML=""+ x +"";
+}
+
+function solve() {
+var num1 = document.getElementById("num1").value;
+var num2 = document.getElementById("num2").value;
+var rand1 = Math.floor((Math.random() * 200) + 1);
+var rand2 = Math.floor((Math.random() * 200) + 1);
+if  (num1 < rand1) {
+var y = ""+ num1 +" is less than the randomly-generated number "+ rand1 +".";
+}
+else if (num1 > rand1) {
+var y = ""+ num1 +" is greater than the randomly-generated number "+ rand1 +".";
+}
+else if (num1 = rand1) {
+var y = "You're lucky, "+ num1 +" is equal to the randomly-generated number "+ rand1 +".";
+}
+
+if (num2 < rand2) {
+var z = "and "+ num2 +" is less than the randomly-generated number "+ rand2 +".";
+}
+else if (num2 > rand2) {
+var z = "and "+ num2 +" is greater than the randomly-generated number "+ rand2 +".";
+}
+else if (num2 = rand2) {
+var z = "and wow, you're lucky with this one as "+ num2 +" is equal to the randomly-generated number "+ rand2 +".";
+}
+
+if  (num1 > rand1 && num2 > rand2) {
+var w = "so according to the results, the numbers you typed are actually greater than our randomly generated numbers, which means it is true.";
+}
+else {
+var w = "so according to the results, since both are not greater than our randomly-generated numbers, then it is false. Try again next time!"; 
+}
+document.getElementById("display").innerHTML=""+ y +", "+ z +"."+ w +"";
+}
+
+function decipher () {
+var num1 = document.getElementById("num1").value;
+var num2 = document.getElementById("num2").value;
+var ansnum1 = Number(num1) * Number(num1);
+var ansnum2 = Number(num2) * Number(num2) * Number(num2);
+
+document.getElementById("display").innerHTML="The square of the first number, "+ num1 +", is "+ ansnum1 +"; while the cube of the second number, "+ num2 +", is "+ ansnum2 +".";
+}
+
+function bonus() {
+var img = document.createElement('img');
+img.src = 'https://i.postimg.cc/ZKFQb2Yz/pockey-removebg-preview.png';
+document.getElementById("refsheet").appendChild(img);
+}
+</script>
+</body>
+</html>
